@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 20px;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.counter-card h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+.count-box {
+  background: #f0edff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.count-box h2 {
+  font-size: 65px;
+  color: #6548d8;
+  margin: 0;
+}
+
+.message {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+button {
+  border: none;
+  padding: 13px 18px;
+  border-radius: 9px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.increment {
+  background: #28a745;
+}
+
+.decrement {
+  background: #e74c3c;
+}
+
+.reset {
+  background: #343a40;
+}
+
+@media (max-width: 400px) {
+  .counter-card {
+    padding: 30px 15px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+}
